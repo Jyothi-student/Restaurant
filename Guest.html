@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Guest page</title>
+</head>
+
+<body>
+
+<header >
+    <div class="resname"><h1>
+        <span class="glyphicon glyphicon-cutlery nocolor"></span>
+        <span class="glyphicon glyphicon-glass nocolor"></span>
+        <span class="btn-text">Dine-In</span>
+    </h1>
+    </div>
+</header>
+
+<section>
+
+        <div class="container sectioncon">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Reviews</a></li>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="OwnerLogin.html"><span class="glyphicon glyphicon-log-in"></span>Owner</a></li>
+                        </ul>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+            <h6 class="text-center">Make a Reservation</h6>
+
+            <form>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="reserveDate">Date</label>
+                            <input type="date" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="reserveTime">Time</label>
+                            <input type="time" class="form-control" id="reserveTime" placeholder="HH:MM">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="guestName">Name</label>
+                    <input type="text" class="form-control" id="guestName" placeholder="Enter Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="guestPhone">Phone</label>
+                    <input type="tel" class="form-control" id="guestPhone" placeholder="Enter Your Phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="reserveEmail">Email</label>
+                    <input type="email" class="form-control" id="reserveEmail" placeholder="example@domain.com">
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="reserveSize">Party Size</label>
+                            <input type="number" class="form-control" id="reserveSize" placeholder="Number of Guests">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-9">
+                        <div class="form-group">
+                            <label for="reserveSpecial">Special Need</label>
+                            <input type="email" class="form-control" id="reserveSpecial" placeholder="e.g. Birthday, Anniversary etc.">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn large-btn btn-primary">Reserve</button>
+                    <button type="button" class="btn btn-link" onclick="window.location.href='editReserve.html'">Modify previous reservation?</button>
+                </div>
+
+            </form>
+        </div>
+
+</section>
+
+</body>
+</html>
